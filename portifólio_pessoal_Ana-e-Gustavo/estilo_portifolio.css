@@ -1,9 +1,16 @@
 body{
-    background-image: linear-gradient(to bottom pink plum);
+    background: linear-gradient(to bottom, pink 20%, plum);
+    height: 100vh;
+    margin: 0;
 }
 
 main{
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin: auto;
 }
 
 header{
@@ -25,13 +32,24 @@ footer p{
 }
 
 section{
-    width: 70%;
+    flex: 1;
+    width: 20%;
+    min-width: 200px;
     align-items: center;
-    padding: 0 15%;
+    padding: 5%;
+    margin: 10px;
+    box-shadow: 0 0 5px;
+    background-color: antiquewhite;
 }
 
-div{
-    box-align: center;
+#imagem{
+    flex: 1;
+    width: 20%;
+    min-width: 200px;
+    align-items: center;
+    padding: 5%;
+    margin: 10px;
+    box-shadow: 0 0 5px;
 }
 
 
@@ -51,15 +69,10 @@ h2{
 }
 
 ul{
-    width: 40%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    padding: 10px;
-    margin: 10px;
-}
-
-li{
-    align-self: center;
+    padding: 15px;
+    margin: 5px;
 }
 
 p {
@@ -80,10 +93,17 @@ p a:hover{
     color: blueviolet;
 }
 
+section p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+
 img{
-    box-align: center;
     width: 240px;
     height: 320px;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 10px 50px;
 }
